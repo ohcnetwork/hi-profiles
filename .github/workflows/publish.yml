@@ -22,7 +22,7 @@ jobs:
         run: npm install
 
       - name: Update package name
-        run: npm pkg set name=@ohcnetwork/hi-profiles
+        run: npm pkg set name=hi-profiles
 
       - name: Set version from tag
         if: ${{ startsWith(github.ref, 'refs/tags/v') }}
