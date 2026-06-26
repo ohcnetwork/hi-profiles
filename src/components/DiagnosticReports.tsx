@@ -63,11 +63,6 @@ export function DiagnosticReport({ report }: IDiagnosticReportProps) {
         <h3 className="text-base font-semibold leading-7 text-gray-900">
           {profile!.getConceptDisplay(report.code)}
         </h3>
-        {report.text && (
-          <p className="mt-1 max-w-2xl text-sm leading-6 text-gray-500">
-            {report.text.div}
-          </p>
-        )}
       </div>
       <dl className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
         {reportDetails.map((detail) =>
